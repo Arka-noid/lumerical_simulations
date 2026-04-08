@@ -1,0 +1,21 @@
+[project]
+name = "my-project"
+version = "0.1.0"
+description = "Lumerical Simulation framework"
+readme = "README.md"
+requires-python = ">=3.9"
+
+dependencies = [
+    "pandas",
+    "tqdm",
+    "ipykernel",
+    "seaborn",
+    "scikit-learn",
+    "salib",
+    "gdstk",
+    "pyDOE",
+]
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"

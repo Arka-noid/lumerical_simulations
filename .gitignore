@@ -6,3 +6,5 @@ venv
 *.lms
 
 *.pyc
+
+*egg-info
