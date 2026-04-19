@@ -1,0 +1,17 @@
+<layer_builder>
+    <process_name>Sample SIN</process_name>
+    <gds_ref_frame sidewall_angle_pos_ind="0"/>
+    <revisions optical_material_revision="af7c87d54ec0d71914b35a0211b0ecb8" process_revision="455c535cb8781bb066893e07730dedc8"/>
+    <material name="SiO2 (Glass) - Palik">
+        <optical name="SiO2 (Glass) - Palik"/>
+    </material>
+    <material name="Si3N4 (Silicon Nitride) - Phillip">
+        <optical name="Si3N4 (Silicon Nitride) - Phillip"/>
+    </material>
+    <layers>
+        <layer material_index="0" layer_name="None" thickness="-4e-06" pattern_material="" start_position="0" sidewall_angle="90" start_position_auto="1" process="Background" enabled="1" strain_value="0" pattern_growth_delta="0" pattern_alpha="0.80000000000000004" name="BOX" pattern_material_index="0" background_alpha="0.29999999999999999" material="SiO2 (Glass) - Palik"/>
+        <layer material_index="0" layer_name="None" thickness="3e-06" pattern_material="" start_position="0" sidewall_angle="90" start_position_auto="1" process="Background" enabled="1" strain_value="0" pattern_growth_delta="0" pattern_alpha="0.80000000000000004" name="TOX" pattern_material_index="0" background_alpha="0.29999999999999999" material="SiO2 (Glass) - Palik"/>
+        <layer material_index="0" layer_name="1:0" thickness="4e-07" pattern_material="Si3N4 (Silicon Nitride) - Phillip" start_position="0" sidewall_angle="85" start_position_auto="0" process="Grow" enabled="1" strain_value="0" pattern_growth_delta="0" pattern_alpha="0.80000000000000004" name="WG" pattern_material_index="0" background_alpha="0.29999999999999999" material=""/>
+    </layers>
+    <doping_layers/>
+</layer_builder>
