@@ -33,7 +33,10 @@ from .geometry_util import (
     straight_waveguide,
     inverse_exponential_profile,
     inverse_polynomial_profile,
+    polynomial_profile,
     sine_profile,
+    profiles,
+    get_profile,
     add_ccsmf,
 )
 
