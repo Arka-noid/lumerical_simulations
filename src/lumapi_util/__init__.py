@@ -94,3 +94,8 @@ from .plot_util import (
     plot_metric_2d_heatmap,
 
 )
+
+from .backend import (
+    SimulationBackend,
+    LumericalModeBackend,
+)
