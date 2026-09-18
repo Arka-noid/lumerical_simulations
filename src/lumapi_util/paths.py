@@ -12,3 +12,4 @@ def get_project_root() -> Path:
 PROJECT_ROOT = get_project_root()
 DATA_DIR = PROJECT_ROOT / "data"
 STACK_DATA_DIR = DATA_DIR / "stack"
+RESULTS_DIR = PROJECT_ROOT / "results"

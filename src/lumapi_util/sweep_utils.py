@@ -10,6 +10,16 @@ import os
 
 import traceback
 
+from .paths import RESULTS_DIR
+
+
+def _resolve_save_path(save_path: str) -> str:
+    """Bare filenames go under RESULTS_DIR; explicit paths (with a directory) are left as-is."""
+    if not os.path.dirname(save_path):
+        RESULTS_DIR.mkdir(parents=True, exist_ok=True)
+        return str(RESULTS_DIR / save_path)
+    return save_path
+
 
 
 ## Deprecating this
@@ -87,6 +97,8 @@ def sweep_param_result(sim,
         geometry_params = {}
     if post_process_params is None:
         post_process_params = {}
+
+    save_path = _resolve_save_path(save_path)
 
     param_names = list(sweep_params.keys())
     param_values = list(sweep_params.values())
@@ -402,6 +414,7 @@ def run_param_sets(
     setup_params = setup_params or {}
     result_params = result_params or {}
     postprocess_params = postprocess_params or {}
+    save_path = _resolve_save_path(save_path)
 
     df = pd.DataFrame()
 
